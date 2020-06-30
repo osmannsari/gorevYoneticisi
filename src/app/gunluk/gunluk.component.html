@@ -1,0 +1,42 @@
+<div class="gunluk">
+    <h1>{{today | date}} Günü Planları </h1>
+<h1>{{title}}</h1>
+
+<input type="text" #newTodo />
+
+<button (click)="addTodo(newTodo.value); newTodo.value=''" >Add</button>
+
+
+<table class="table">
+<tr>
+    <th>Düzenle</th>
+    <th>Yapılacaklar</th>
+    <th></th>
+    <th>Durum</th>
+    <th></th>
+    <th>Sil</th>
+</tr>
+
+<tr *ngFor="let todo of todos">
+    <td>
+        <button class="donebutton" (click)=doneTodo(todo)>Tamamlandı</button>
+    </td>
+    <td>{{todo.event}}</td>
+    <td></td>
+    <td>{{todo.done ? '&#10003;' : '&#10005;' }}</td>
+    <td></td>
+    <td>
+        <button class="deletebutton" (click)=deleteTodo(todo)>Sil</button>
+    </td>
+
+</tr>
+
+
+</table>
+
+
+
+</div>
+
+
+

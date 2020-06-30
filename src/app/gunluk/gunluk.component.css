@@ -1,0 +1,49 @@
+.gunluk{
+
+    width: 800px;
+    height: 800px;  
+    position:absolute;
+    left: 30%;
+    top: 20%;
+    
+}
+
+
+td{
+    background: lightyellow;
+    padding: 5px;
+
+}
+
+th{
+    background: rgb(54, 66, 29);
+    color: white;
+    padding: 5px;
+
+
+}
+
+input{
+    height: 40px;
+    width: 400px;
+}
+button{
+    height: 50px;
+    width: 40px;
+    background-color: rgb(198, 214, 129);
+}
+
+.donebutton{
+ 
+    height: 30px;
+    width: 100px;
+    background-color: grey;
+}
+
+
+.deletebutton{
+ 
+    height: 30px;
+    width: 40px;
+    background-color:grey;
+}
